@@ -1,0 +1,76 @@
+*{
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+
+  .pokemon {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #0bf703;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #48ff00;
+    margin: 0 auto;
+  }
+
+  .pokemon h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .pokemon p {
+    margin-bottom: 5px;
+  }
+
+  .pokemon img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pokemon .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .pokemon button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pokemon button.previous {
+    background-color: #f50e02;
+    color: white;
+  }
+
+  .pokemon button.previous:hover {
+    background-color: #e5392f;
+  }
+
+  .pokemon button.next {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+  }
+
+  .pokemon button.next:hover {
+    background-color: #369b3a;
+  }
+
+  @media (max-width: 768px) {
+    .pokemon {
+      max-width: 100%;
+    }
+  }
+
